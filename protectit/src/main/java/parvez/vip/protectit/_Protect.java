@@ -19,6 +19,12 @@ public class _Protect {
     public static final String[] LUCKYPATCHERS = {"com.dimonvideo.luckypatcher", "com.chelpus.lackypatch"
             , "com.android.vending.billing.InAppBillingService.LACK"};
 
+    /**
+     * construction
+      */
+    private _Protect(){
+
+    }
 
     /**
      *  If Signature is matched thats means you are ok to go
@@ -36,6 +42,7 @@ public class _Protect {
                 // Kill the process without warning. If someone changed the certificate
                 // is better not to give a hint about why the app stopped working
                 //android.os.Process.killProcess(android.os.Process.myPid());
+                Log.d(TAG,"SIGNATURE: "+signatures[0].toCharsString());
                 return true;
             }
         } catch (PackageManager.NameNotFoundException e) {
