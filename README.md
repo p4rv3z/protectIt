@@ -17,6 +17,6 @@ allprojects {
 Add the dependency  
 ```
 dependencies {
-	        implementation 'com.github.p4rv3z:longlog:1.0.1'
+	        implementation 'com.github.p4rv3z:protectIt:1.0.0-beta'
 	}
 ```
